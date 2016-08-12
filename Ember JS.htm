@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.learnhowtoprogram.com/javascript/ember-js -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ember JS</title>
+
+<script type="text/javascript" src="./Ember JS_files/48356a79ca"></script><script src="./Ember JS_files/nr-963.min.js"></script><script type="text/javascript" async="" src="./Ember JS_files/ga.js"></script><script async="" src="./Ember JS_files/cloudflare.min.js"></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"6eaee1a1762d23df434cf746d5ab170c",petok:"47d054312aaa3a2bebbd887675919226c9213752-1471040584-1800",zone:"learnhowtoprogram.com",rocket:"0",apps:{"ga_key":{"ua":"UA-37469895-2","ga_bs":"1"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"48356a79ca","applicationID":"1386295","transactionName":"IAwPEhQNWVxUFx5KUAAXCAkIERpDWQpG","queueTime":3,"applicationTime":144,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="jw0p8ZqTQczRcSdnr//NEff7hOh5CnByCcin3A1b+84YNk7E+E4z2+601jveLDQOb8ab/u10PyKooZIZrGeP9Q==">
+<link rel="stylesheet" media="all" href="./Ember JS_files/application-11aae51317641930eeb93a7f6ccc38b6bc6ecf53c449c0273d59effa73f919a3.css">
+<link href="./Ember JS_files/css" rel="stylesheet" type="text/css">
+<script src="./Ember JS_files/application-290b9e2f856c15ef7f99c69b163d3e246213cdbe7b19fff57b40e2094d15979c.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37469895-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+/* ]]> */
+</script>
+<style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head>
+<body><div id="lightningjs-usabilla_live" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-usabilla_live" src="./Ember JS_files/saved_resource.html"></iframe></div></div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<ul class="breadcrumb">
+<li><a href="https://www.learnhowtoprogram.com/javascript">JavaScript</a></li>
+<li class="active">Ember JS</li>
+</ul>
+<ul class="lessons-list list-unstyled">
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/ember-js-objectives">Ember.js Objectives</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/installing-ember-js">Installing Ember.js</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/ember-core-concepts">Ember Core Concepts</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/application-setup-and-structure">Application Setup and Structure</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/routes-and-templates">Routes and Templates</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/models">Models</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/ember-data-and-firebase">Ember Data and Firebase</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/components-hide-show-image">Components - Hide/Show Image</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/components-save-delete">Components - Save/Delete</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/ember-debugging">Ember Debugging</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Weekend
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/additional-pair-programming-tips">Additional Pair Programming Tips</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-pencil"></i>
+Monday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/property-rental-app">Property Rental App</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Monday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/components-update">Components - Update</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Monday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/dynamic-routing-find-record">Dynamic Routing: Find Record</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Monday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/add-ons-bootstrap">Add-ons: Bootstrap</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Monday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/application-template">Application template</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-pencil"></i>
+Tuesday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/bustle-clone">Bustle Clone</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Tuesday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/one-route-multiple-models">One Route: Multiple Models</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-pencil"></i>
+Wednesday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/blog-day-one">Blog: Day One</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Wednesday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/model-relationships">Model Relationships</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Wednesday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/implementing-model-relationships">Implementing Model Relationships</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-book"></i>
+Wednesday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/deleting-model-relationships">Deleting Model Relationships</a>
+</li>
+<li>
+<i class="glyphicon glyphicon-pencil"></i>
+Thursday
+<a href="https://www.learnhowtoprogram.com/javascript/ember-js/blog-day-two">Blog: Day Two</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.learnhowtoprogram.com/courses">Courses</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li></li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li id="navbar-search">
+<form class="navbar-form navbar-left" action="https://www.learnhowtoprogram.com/lessons" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="input-group">
+<input type="text" name="search" id="search" placeholder="Search lessons" class="form-control">
+<div class="input-group-btn">
+<input type="submit" name="commit" value="Search" class="btn btn-info">
+</div>
+</div>
+</form> </li>
+</ul>
+</div>
+</div>
+</nav>
+<footer class="footer">
+<div class="container">
+<p>© 2016 <a href="http://www.epicodus.com/">Epicodus</a>, Inc.</p>
+</div>
+</footer>
+ 
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+    window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/a5a2c64ff5b8.js");
+    /*]]>{/literal}*/</script>
+ 
+
+
+<div class="usabilla_live_button_container" tabindex="0" aria-hidden="true" style="right:0px;top:50%;margin-top:-65px;position:fixed;width:39px;height:130px;z-index:999"><iframe src="./Ember JS_files/saved_resource(1).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Visual Feedback Button" style="width: 39px; height: 130px; margin: 0px; padding: 0px; border: 0px; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;"></iframe></div></body></html>

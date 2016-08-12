@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://www.learnhowtoprogram.com/javascript/ember-js/ember-data-and-firebase -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ember Data and Firebase</title>
+
+<script type="text/javascript" src="./Ember Data and Firebase_files/48356a79ca"></script><script src="./Ember Data and Firebase_files/nr-963.min.js"></script><script type="text/javascript" async="" src="./Ember Data and Firebase_files/ga.js"></script><script async="" src="./Ember Data and Firebase_files/cloudflare.min.js"></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"6eaee1a1762d23df434cf746d5ab170c",petok:"9276071f6a684df8266bda17cc99ea249a0abfef-1471040481-1800",zone:"learnhowtoprogram.com",rocket:"0",apps:{"ga_key":{"ua":"UA-37469895-2","ga_bs":"1"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"48356a79ca","applicationID":"1386295","transactionName":"IAwPEhQNWVxUFx5VUBAQDggVTUZYXhI=","queueTime":5,"applicationTime":72,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="DBy1XlM9DHGs5UM9r+qrPebBS8V6y0lMGTQcpsHupTCbJ9JrMeB+ZpMgsmHeOVIifvxU0+61Bhy4XSljYNLRCw==">
+<link rel="stylesheet" media="all" href="./Ember Data and Firebase_files/application-11aae51317641930eeb93a7f6ccc38b6bc6ecf53c449c0273d59effa73f919a3.css">
+<link href="./Ember Data and Firebase_files/css" rel="stylesheet" type="text/css">
+<script src="./Ember Data and Firebase_files/application-290b9e2f856c15ef7f99c69b163d3e246213cdbe7b19fff57b40e2094d15979c.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37469895-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+/* ]]> */
+</script>
+<style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head>
+<body><div id="lightningjs-usabilla_live" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-usabilla_live" src="./Ember Data and Firebase_files/saved_resource.html"></iframe></div></div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<span class="label label-info">Lesson</span>
+<span class="label label-primary">Weekend</span>
+<ul class="breadcrumb">
+<li><a href="https://www.learnhowtoprogram.com/javascript">JavaScript</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js">Ember JS</a></li>
+<li class="active">Ember Data and Firebase</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active"><a href="https://www.learnhowtoprogram.com/javascript/ember-js/ember-data-and-firebase#text" data-toggle="tab">Text</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active in" id="text">
+<p>Using hard-coded model data is great for demonstrating the relationship between models, routes and templates, but is very limited in practice. As our application grows we will need the ability to create, update and delete rentals. We cannot reasonably do this with a hard-coded array as our model.</p>
+<p>However, Ember includes a model data management library called <strong>Ember Data</strong> that will easily provide this functionality. </p>
+<h2>Generating Ember Data Models</h2>
+<p>Let's generate our first Ember Data model:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ ember g model rental</span></code></pre>
+<p>This will create two files in our application: A model file and a test file:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">version</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.4</span><span class="pun">.</span><span class="lit">2</span><span class="pln">
+installing model
+  create app</span><span class="pun">/</span><span class="pln">models</span><span class="pun">/</span><span class="pln">rental</span><span class="pun">.</span><span class="pln">js
+installing model</span><span class="pun">-</span><span class="pln">test
+  create tests</span><span class="pun">/</span><span class="pln">unit</span><span class="pun">/</span><span class="pln">models</span><span class="pun">/</span><span class="pln">rental</span><span class="pun">-</span><span class="pln">test</span><span class="pun">.</span><span class="pln">js</span></code></pre>
+<p>The model file contains the following:</p>
+<div class="filename">app/models/rental.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Model</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember-data/model'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Model</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+
+</span><span class="pun">});</span></code></pre>
+<p>This file is essentially a 'blueprint' listing out the attributes each of our rentals should contain. However, we're going to import and export data slightly different than the Ember default. We'll change the line <code class="prettyprint prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Model</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember-data/model'</span><span class="pun">;</span></code> to <code class="prettyprint prettyprinted"><span class="kwd">import</span><span class="pln"> DS </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember-data'</span><span class="pun">;</span></code>. This will provide us access to our entire data store, instead of just one model, which will prevent the need to add multiple <code class="prettyprint prettyprinted"><span class="kwd">import</span></code> lines later on.</p>
+<p>Additionally, we'll change <code class="prettyprint prettyprinted"><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Model</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span></code> to <code class="prettyprint prettyprinted"><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> DS</span><span class="pun">.</span><span class="typ">Model</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span></code> to match our updated <code class="prettyprint prettyprinted"><span class="kwd">import</span></code> line. </p>
+<p>Then, we'll use the same attributes we previously used in our hard-coded array of JavaScript objects: Owner, city, type, image, and bedrooms: </p>
+<div class="filename">app/models/rental.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> DS </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember-data'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> DS</span><span class="pun">.</span><span class="typ">Model</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+    owner</span><span class="pun">:</span><span class="pln"> DS</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(),</span><span class="pln">
+    city</span><span class="pun">:</span><span class="pln"> DS</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(),</span><span class="pln">
+    type</span><span class="pun">:</span><span class="pln"> DS</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(),</span><span class="pln">
+    image</span><span class="pun">:</span><span class="pln"> DS</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(),</span><span class="pln">
+    bedrooms</span><span class="pun">:</span><span class="pln"> DS</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">()</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>The <code class="prettyprint prettyprinted"><span class="pln">DS</span></code> in this file stands for "data store". <code class="prettyprint prettyprinted"><span class="pun">.</span><span class="pln">attr</span><span class="pun">()</span></code> stands for 'attribute'. This is a list of object attributes we want to save to our store for each rental we add. When a <code class="prettyprint prettyprinted"><span class="pln">DS</span><span class="pun">.</span><span class="typ">Model</span></code> is exported, as we see in the line <code class="prettyprint prettyprinted"><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> DS</span><span class="pun">.</span><span class="typ">Model</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln"> </span><span class="pun">...</span></code> it is added to the data store. That is, it's being saved to our database. </p>
+<h2>Using Firebase with Ember Data</h2>
+<p>Ember Data can be configured to save to any persistent data source. We are going to use Firebase databases for our Ember applications. Firebase is a cloud database that stores information in JSON format. Visit <a href="https://www.firebase.com/">Firebase's website</a> and set up a free account. </p>
+<h3>Installing EmberFire</h3>
+<p>In order for Ember Data to communicate with our Firebase database, we need to configure Ember Data to work with Firebase. We can do this by using an <strong>add-on</strong> called <strong><a href="https://www.firebase.com/docs/web/libraries/ember/guide.html">EmberFire</a></strong>. An add-on is code that extends Ember functionality, but is not part of the core Ember codebase. </p>
+<p>Let's install EmberFire from our app directory:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ ember install emberfire</span></code></pre>
+<p>and we see:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="typ">Installed</span><span class="pln"> packages </span><span class="kwd">for</span><span class="pln"> tooling via npm</span><span class="pun">.</span><span class="pln">
+installing emberfire
+  create app</span><span class="pun">/</span><span class="pln">adapters</span><span class="pun">/</span><span class="pln">application</span><span class="pun">.</span><span class="pln">js
+  install bower </span><span class="kwd">package</span><span class="pln"> firebase
+  </span><span class="kwd">not</span><span class="pun">-</span><span class="pln">cached https</span><span class="pun">:</span><span class="com">//github.com/firebase/firebase-bower.git#^3.0.0</span><span class="pln">
+  resolved https</span><span class="pun">:</span><span class="com">//github.com/firebase/firebase-bower.git#3.0.4</span><span class="pln">
+</span><span class="typ">Installed</span><span class="pln"> browser packages via </span><span class="typ">Bower</span><span class="pun">.</span><span class="pln">
+
+</span><span class="typ">EmberFire</span><span class="pln"> installed</span><span class="pun">.</span><span class="pln">
+
+CONFIGURATION REQUIRED
+
+</span><span class="typ">Please</span><span class="pln"> update config</span><span class="pun">/</span><span class="pln">environment</span><span class="pun">.</span><span class="pln">js </span><span class="kwd">with</span><span class="pln"> your firebase settings</span><span class="pun">.</span><span class="pln"> </span><span class="typ">You</span><span class="pln"> can find these at https</span><span class="pun">:</span><span class="com">//console.firebase.google.com/ by clicking the [Add Firebase to your web app] button on the project overview panel.</span><span class="pln">
+
+</span><span class="typ">Example</span><span class="pun">:</span><span class="pln">
+
+</span><span class="com">// config/environment.js</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> ENV </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  locationType</span><span class="pun">:</span><span class="pln"> </span><span class="str">'auto'</span><span class="pun">,</span><span class="pln">
+  </span><span class="com">// ...</span><span class="pln">
+  firebase</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    apiKey</span><span class="pun">:</span><span class="pln"> </span><span class="str">'xyz'</span><span class="pun">,</span><span class="pln">
+    authDomain</span><span class="pun">:</span><span class="pln"> </span><span class="str">'YOUR-FIREBASE-APP.firebaseapp.com'</span><span class="pun">,</span><span class="pln">
+    databaseURL</span><span class="pun">:</span><span class="pln"> </span><span class="str">'https://YOUR-FIREBASE-APP.firebaseapp.com'</span><span class="pun">,</span><span class="pln">
+    storageBucket</span><span class="pun">:</span><span class="pln"> </span><span class="str">'YOUR-FIREBASE-APP.appspot.com'</span><span class="pun">,</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+
+
+  </span><span class="com">// if using ember-cli-content-security-policy</span><span class="pln">
+  contentSecurityPolicy</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">'script-src'</span><span class="pun">:</span><span class="pln"> </span><span class="str">''</span><span class="kwd">self</span><span class="str">' '</span><span class="kwd">unsafe</span><span class="pun">-</span><span class="kwd">eval</span><span class="str">' apis.google.com'</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'frame-src'</span><span class="pun">:</span><span class="pln"> </span><span class="str">''</span><span class="kwd">self</span><span class="str">' https://*.firebaseapp.com'</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'connect-src'</span><span class="pun">:</span><span class="pln"> </span><span class="str">''</span><span class="kwd">self</span><span class="str">' wss://*.firebaseio.com https://*.googleapis.com'</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+
+
+</span><span class="typ">Installed</span><span class="pln"> addon </span><span class="kwd">package</span><span class="pun">.</span></code></pre>
+<p>This automatically adds emberfire to <code class="prettyprint prettyprinted"><span class="kwd">package</span><span class="pun">.</span><span class="pln">json</span></code>, firebase to <code class="prettyprint prettyprinted"><span class="pln">bower</span><span class="pun">.</span><span class="pln">json</span></code>, and create a new application adapter:</p>
+<div class="filename">app/adapters/application.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">FirebaseAdapter</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'emberfire/adapters/firebase'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">FirebaseAdapter</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p><strong>Adapters</strong> connect our applications to their data stores. This code is creating an adapter specifically meant for connecting to Firebase. It uses Ember's <a href="https://guides.emberjs.com/v2.3.0/applications/dependency-injection/">Service Injection mechanism</a> to inject it into the application. Don't worry about these specifics yet. For now, just know adapters are responsible for connecting an application to its store, and that we won't often add any code to our adapters, especially when using pre-existing tools like emberfire and Firebase. </p>
+<h3>Configuring Firebase</h3>
+<p>Now, let's configure our Firebase URL and API key. The adapter we just generated will handle connecting to Firebase, but we need to let it know our API key and <em>where</em> our Firebase data store is located. We'll need to log into our Firebase account and create a new project by clicking the <em>CREATE NEW PROJECT</em> button on the Firebase dashboard. In this example, we are using a Firebase project with the same name as our Ember app: <em>super-rentals</em>. We'll add a few lines in the <code class="prettyprint prettyprinted"><span class="pln">ENV</span></code> variable in <code class="prettyprint prettyprinted"><span class="pln">config</span><span class="pun">/</span><span class="pln">environment</span><span class="pun">.</span><span class="pln">js</span></code> specifying config info for the app we've just created on Firebase's website. Ember will use this info to locate and communicate with our <code class="prettyprint prettyprinted"><span class="kwd">super</span><span class="pun">-</span><span class="pln">rentals</span></code> Firebase application:</p>
+<div class="filename">config/environment.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="pun">...</span><span class="pln">
+</span><span class="kwd">module</span><span class="pun">.</span><span class="pln">exports </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">environment</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">var</span><span class="pln"> ENV </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    firebase</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      apiKey</span><span class="pun">:</span><span class="pln"> </span><span class="str">'YOUR-API-KEY-HERE'</span><span class="pun">,</span><span class="pln"> </span><span class="com"># REPLACE INFO HERE</span><span class="pln">
+      authDomain</span><span class="pun">:</span><span class="pln"> </span><span class="str">'YOUR-FIREBASE-APP.firebaseapp.com'</span><span class="pun">,</span><span class="pln"> </span><span class="com"># REPLACE INFO HERE</span><span class="pln">
+      databaseURL</span><span class="pun">:</span><span class="pln"> </span><span class="str">'https://YOUR-FIREBASE-APP.firebaseio.com'</span><span class="pun">,</span><span class="pln"> </span><span class="com"># REPLACE INFO HERE</span><span class="pln">
+      storageBucket</span><span class="pun">:</span><span class="pln"> </span><span class="str">'YOUR-FIREBASE-APP.appspot.com'</span><span class="pun">,</span><span class="pln"> </span><span class="com"># REPLACE INFO HERE</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+</span><span class="pun">...</span></code></pre>
+<p>This <code class="prettyprint prettyprinted"><span class="pln">firebase</span></code> section should be added <em>inside</em> the <code class="prettyprint prettyprinted"><span class="pln">ENV</span></code> section. Do not erase any other parts of the <code class="prettyprint prettyprinted"><span class="pln">ENV</span></code> section.</p>
+<p>To retrieve the API key and URL for your own Firebase project, from the Firebase console for your project, click the <em>Add Firebase to your web app</em> button. A modal will open that includes your <em>apiKey</em>, <em>authDomain</em>, <em>databaseURL</em>, and <em>storageBucket</em>. Copy these into the appropriate spots in your <em>environment.js</em> file, as outlined above.</p>
+<p>After installing and configuring EmberFire, you'll need to <strong>restart your server</strong> for changes to register.</p>
+<h3>Importing Data to Firebase</h3>
+<p>Before we add data to our store through our Ember application, we can manually import the data from our hard-coded model hook directly into Firebase. This will allow us see what it looks like in Firebase and understand how data arrives from Ember.</p>
+<p>First, we'll create a file called <code class="prettyprint prettyprinted"><span class="pln">rentals</span><span class="pun">.</span><span class="pln">json</span></code> at the top level of our project folder. It will contain our rental objects in <strong>JSON</strong> format. JSON stands for JavaScript Object Notation and is a standard format for communicating data between systems. </p>
+<div class="filename">rentals.json</div>
+<pre><code class="prettyprint lang-text prettyprinted"><span class="pun">{</span><span class="pln"> </span><span class="str">"rentals"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[{</span><span class="pln">
+    </span><span class="str">"owner"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Veruca Salt"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"city"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"San Francisco"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"type"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Estate"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"bedrooms"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">15</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"image"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"owner"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Mike Teavee"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"city"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Seattle"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"type"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Condo"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"bedrooms"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"image"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">"owner"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Violet Beauregarde"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"city"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Portland"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"type"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Apartment"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"bedrooms"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">"image"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"</span><span class="pln">
+  </span><span class="pun">}]</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Navigate to the <em>Database</em> section of your Firebase console, and select the <em>Data</em> tab. From here, click the three dots on the right-hand side, and select <em>Import JSON</em> from the options menu: </p>
+<p><img src="./Ember Data and Firebase_files/how-to-import-json-in-firebase.png" alt="Firebase import data screenshot"></p>
+<p>Then, select the JSON file you've just created, and hit <em>Import</em>:</p>
+<p><img src="./Ember Data and Firebase_files/import-json-ember-2.png" alt="importing-data-into-firebase-console"></p>
+<p>This uploading process is similar to what will happen when our Ember app sends and receives data from Firebase. Now, we have our original rentals persisting in our Firebase application.</p>
+<h3>Altering Firebase Permissions</h3>
+<p>Additionally, we'll have to let Firebase know that our application has permission to write to our new database. To do this, we can navigate to the <em>Rules</em> tab at the top of our Firebase console, and update the JSON to read:</p>
+<pre><code class="prettyprint prettyprinted"><span class="pun">{</span><span class="pln">
+  </span><span class="str">"rules"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">".read"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">".write"</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span></code></pre>
+<p><img src="./Ember Data and Firebase_files/update-firebase-permissions.png" alt="updating-permissions-in-firebase"></p>
+<p>For now, this will allow <em>any</em> application with our unique Firebase URL to read and write to our database. </p>
+<h2>Updating the Model Hook</h2>
+<p>To use our new data store in our application, we need to update the model hook in our route handler:</p>
+<div class="filename">app/routes/index.js</div>
+<pre><code class="prettyprint prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Route</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  model</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">store</span><span class="pun">.</span><span class="pln">findAll</span><span class="pun">(</span><span class="str">'rental'</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>Here, we specify <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="pln">store</span></code> to refer to the Firebase data store we've set up for our application. Then the <code class="prettyprint prettyprinted"><span class="pln">findAll</span></code> method with the argument <code class="prettyprint prettyprinted"><span class="pln">rental</span></code> instructs Ember Data to find <em>all</em> records of the type <code class="prettyprint prettyprinted"><span class="pln">rental</span></code> in the store, and return them to our application. </p>
+<p>You may have noticed that the JSON we uploaded to Firebase defines an array of objects labelled rental<strong>s</strong> (plural), whereas the model hook above instructs Ember to return each object of the type rental (singular). Ember and Firebase have built-in functionality to understand pluralization. It will know the "rentals" table in Firebase contains multiple "rental" objects. Generally speaking, your table names in Firebase will be a plural model name, and the model hooks in your routes will refer to the singular model name.</p>
+<h2>Diagram</h2>
+<p>Here is the updated structure of our application, with newly-edited files highlighted: </p>
+<p><img src="./Ember Data and Firebase_files/emberstructurenowwithmodels.png" alt="ember-structure-with-added-model"></p>
+<p></p><hr><p></p>
+<p><strong><a href="https://github.com/epicodus-lessons/ember-super-rentals/tree/1.2_ember_data_and_firebase"><i class="glyphicon glyphicon-folder-open"></i> Example GitHub Repo for Super-Rentals</a></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.learnhowtoprogram.com/courses">Courses</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li> </li><li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/models">Previous</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/components-hide-show-image">Next</a></li>
+
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li id="navbar-search">
+<form class="navbar-form navbar-left" action="https://www.learnhowtoprogram.com/lessons" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="input-group">
+<input type="text" name="search" id="search" placeholder="Search lessons" class="form-control">
+<div class="input-group-btn">
+<input type="submit" name="commit" value="Search" class="btn btn-info">
+</div>
+</div>
+</form> </li>
+</ul>
+</div>
+</div>
+</nav>
+<footer class="footer">
+<div class="container">
+<p>© 2016 <a href="http://www.epicodus.com/">Epicodus</a>, Inc.</p>
+</div>
+</footer>
+ 
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+    window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/a5a2c64ff5b8.js");
+    /*]]>{/literal}*/</script>
+ 
+
+
+<div class="usabilla_live_button_container" tabindex="0" aria-hidden="true" style="right:0px;top:50%;margin-top:-65px;position:fixed;width:39px;height:130px;z-index:999"><iframe src="./Ember Data and Firebase_files/saved_resource(1).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Visual Feedback Button" style="width: 39px; height: 130px; margin: 0px; padding: 0px; border: 0px; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;"></iframe></div></body></html>

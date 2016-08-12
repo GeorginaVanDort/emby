@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://www.learnhowtoprogram.com/javascript/ember-js/routes-and-templates -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Routes and Templates</title>
+
+<script type="text/javascript" src="./Routes and Templates_files/48356a79ca"></script><script src="./Routes and Templates_files/nr-963.min.js"></script><script type="text/javascript" async="" src="./Routes and Templates_files/ga.js"></script><script async="" src="./Routes and Templates_files/cloudflare.min.js"></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"6eaee1a1762d23df434cf746d5ab170c",petok:"1c8a5724103bb8bb5e9caced973d31cb80f56cbc-1471040459-1800",zone:"learnhowtoprogram.com",rocket:"0",apps:{"ga_key":{"ua":"UA-37469895-2","ga_bs":"1"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"48356a79ca","applicationID":"1386295","transactionName":"IAwPEhQNWVxUFx5VUBAQDggVTUZYXhI=","queueTime":6,"applicationTime":80,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="HIXQv4bI9JnX6us6o0C5IlrysM8pTMO50LBXWvVeiYSLvreK5BWGjugvGmbSk0A9ws+v2b0yjOlx2WKfVGL9vw==">
+<link rel="stylesheet" media="all" href="./Routes and Templates_files/application-11aae51317641930eeb93a7f6ccc38b6bc6ecf53c449c0273d59effa73f919a3.css">
+<link href="./Routes and Templates_files/css" rel="stylesheet" type="text/css">
+<script src="./Routes and Templates_files/application-290b9e2f856c15ef7f99c69b163d3e246213cdbe7b19fff57b40e2094d15979c.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37469895-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+/* ]]> */
+</script>
+<style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head>
+<body><div id="lightningjs-usabilla_live" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-usabilla_live" src="./Routes and Templates_files/saved_resource.html"></iframe></div></div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<span class="label label-info">Lesson</span>
+<span class="label label-primary">Weekend</span>
+<ul class="breadcrumb">
+<li><a href="https://www.learnhowtoprogram.com/javascript">JavaScript</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js">Ember JS</a></li>
+<li class="active">Routes and Templates</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active"><a href="https://www.learnhowtoprogram.com/javascript/ember-js/routes-and-templates#text" data-toggle="tab">Text</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/routes-and-templates#cheat-sheet" data-toggle="tab">Cheat sheet</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active in" id="text">
+<p>We will start our Super Rentals site with just a few static pages: A homepage, an about page and a contact page. Before we begin, let's consider what our application will look like from the user's perspective: </p>
+<p><img src="./Routes and Templates_files/ember-super-rentals-index.png" alt="super rentals homepage screenshot"></p>
+<p>Users first arrive at a home page displaying all available rentals. From here, they may navigate to the about and contact pages using links below the rental list.</p>
+<p>Before we build these first three pages, we'll need to remove the contents of the <code class="prettyprint prettyprinted"><span class="pln">app</span><span class="pun">/</span><span class="pln">templates</span><span class="pun">/</span><span class="pln">application</span><span class="pun">.</span><span class="pln">hbs</span></code> file, leaving only the <code class="prettyprint prettyprinted"><span class="pun">{{</span><span class="pln">outlet</span><span class="pun">}}</span></code> line of code. We'll discuss the role of <code class="prettyprint prettyprinted"><span class="pln">application</span><span class="pun">.</span><span class="pln">hbs</span></code> more after our site has a few pages.</p>
+<h2>An About Route</h2>
+<p>Now, let's start by creating our "about" page. Remember, <em>convention over configuration</em>. When the URL path <code class="prettyprint prettyprinted"><span class="pun">/</span><span class="pln">about</span></code> is loaded, the <strong>Router</strong> will map the URL to the <strong>route handler</strong> of the same name, <em>about.js</em>. The route handler will then load the corresponding <em>about.hbs</em> <strong>template</strong>.</p>
+<p>If we run <code class="prettyprint prettyprinted"><span class="pln">ember help generate</span></code>, we see a variety of tools come with Ember for automatically generating various files and resources. We'll use the route generator to build our <code class="prettyprint prettyprinted"><span class="pln">about</span></code> route:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ ember generate route about</span></code></pre>
+<p>or for short,</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ ember g route about</span></code></pre>
+<p>We can see what actions are taken by the generator:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">version</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.4</span><span class="pun">.</span><span class="lit">2</span><span class="pln">
+installing route
+  create app</span><span class="pun">/</span><span class="pln">routes</span><span class="pun">/</span><span class="pln">about</span><span class="pun">.</span><span class="pln">js
+  create app</span><span class="pun">/</span><span class="pln">templates</span><span class="pun">/</span><span class="pln">about</span><span class="pun">.</span><span class="pln">hbs
+updating router
+  add route about
+installing route</span><span class="pun">-</span><span class="pln">test
+  create tests</span><span class="pun">/</span><span class="pln">unit</span><span class="pun">/</span><span class="pln">routes</span><span class="pun">/</span><span class="pln">about</span><span class="pun">-</span><span class="pln">test</span><span class="pun">.</span><span class="pln">js</span></code></pre>
+<p>Three new files are created: One for the route handler, one for the template the route handler will render, and a test file. The router is also amended.</p>
+<p>When we open the router, we can see that the generator has mapped a new <em>about</em> route for us. This route will load the <code class="prettyprint prettyprinted"><span class="pln">about</span></code> route handler.</p>
+<div class="filename">app/router.js</div>
+<pre><code class="prettyprint lang-app/router.js prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> config </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'./config/environment'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">const</span><span class="pln"> </span><span class="typ">Router</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Router</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  location</span><span class="pun">:</span><span class="pln"> config</span><span class="pun">.</span><span class="pln">locationType
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="typ">Router</span><span class="pun">.</span><span class="pln">map</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">route</span><span class="pun">(</span><span class="str">'about'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Router</span><span class="pun">;</span></code></pre>
+<p>By default, the <code class="prettyprint prettyprinted"><span class="pln">about</span></code> route handler loads the <code class="prettyprint prettyprinted"><span class="pln">about</span><span class="pun">.</span><span class="pln">hbs</span></code> template. We don't need to add anything to the <code class="prettyprint prettyprinted"><span class="pln">app</span><span class="pun">/</span><span class="pln">routes</span><span class="pun">/</span><span class="pln">about</span><span class="pun">.</span><span class="pln">js</span></code> file we just created for the <code class="prettyprint prettyprinted"><span class="pln">about</span><span class="pun">.</span><span class="pln">hbs</span></code> template to render automatically. </p>
+<p>With routing in place, we can begin coding our template. When we open <code class="prettyprint prettyprinted"><span class="pln">about</span><span class="pun">.</span><span class="pln">hbs</span></code> we see it currently contains one line: <code class="prettyprint prettyprinted"><span class="pun">{{</span><span class="pln">outlet</span><span class="pun">}}</span></code>. This is where something called a nested route would render if we had one. (Don't worry about this right now, we'll explore <code class="prettyprint prettyprinted"><span class="pun">{{</span><span class="pln">outlet</span><span class="pun">}}</span></code> tags in more detail later on when we address application templates and nested routes.)</p>
+<p>We can simply remove this <code class="prettyprint prettyprinted"><span class="pun">{{</span><span class="pln">outlet</span><span class="pun">}}</span></code> tag add some HTML describing our site to the <code class="prettyprint prettyprinted"><span class="pln">about</span></code> page: </p>
+<div class="filename">app/templates/about.hbs</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="tag">&lt;h2&gt;</span><span class="pln">About Super Rentals</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">The Super Rentals website was created to explore the wonderful world of Ember.js. This project allows us to imagine traveling the world while simultaneously traversing the pathways of the Ember framework!</span><span class="tag">&lt;/p&gt;</span></code></pre>
+<p>If we launch the application by running <code class="prettyprint prettyprinted"><span class="pln">ember serve</span></code>, and visit <code class="prettyprint prettyprinted"><span class="pln">localhost</span><span class="pun">:</span><span class="lit">4200</span><span class="pun">/</span><span class="pln">about</span></code> we can see our new page in the browser. Awesome! </p>
+<p>This is what the structure of our application currently looks like, and the steps that occur when we travel to the <code class="prettyprint prettyprinted"><span class="pln">about</span></code> route:</p>
+<p><br><br></p>
+<p><img src="./Routes and Templates_files/stepbysteproutesember.png" alt="ember-structure-first-route"></p>
+<p><br><br></p>
+<h2>A Contact Route</h2>
+<p>Let's create another static page with contact information. Once again, we'll start by generating a route, a route handler, and a template with the following command:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ ember g route contact</span></code></pre>
+<p>We see that our generator has created a <code class="prettyprint prettyprinted"><span class="pln">contact</span></code> entry in our router, a corresponding route handler in <code class="prettyprint prettyprinted"><span class="pln">app</span><span class="pun">/</span><span class="pln">routes</span><span class="pun">/</span><span class="pln">contact</span><span class="pun">.</span><span class="pln">js</span></code>, and a <code class="prettyprint prettyprinted"><span class="pln">contact</span></code> template. Just like before, the <code class="prettyprint prettyprinted"><span class="pln">contact</span></code> route does not require anything additional to load automatically.</p>
+<p>In our template,<code class="prettyprint prettyprinted"><span class="pln">contact</span><span class="pun">.</span><span class="pln">hbs</span></code>, we'll add details for getting in touch with Super Rentals: </p>
+<div class="filename">app/templates/contact.hbs</div>
+<pre><code class="prettyprint lang-handlebars prettyprinted"><span class="tag">&lt;p&gt;</span><span class="pln">Super Rentals Representatives would love to help you choose a destination or answer any burning questions you may have.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">Contact us today!</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">
+  Super Rentals Headquarters</span><span class="tag">&lt;br&gt;</span><span class="pln">
+  1212 Test Address Avenue</span><span class="tag">&lt;br&gt;</span><span class="pln">
+  TestyMcTestington, OR 97233
+</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">(503) 555-1212</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">superrentalsrep@superrentals.com</span><span class="tag">&lt;/p&gt;</span></code></pre>
+<p>Also, we can remove the <code class="prettyprint prettyprinted"><span class="pun">{{</span><span class="pln">outlet</span><span class="pun">}}</span></code> tag that was automatically included in our <em>contact.hbs</em> file. These tags are used to render something called a nested route, which we will not explore until next week.</p>
+<p>Now our second static page is now complete. If we navigate to <code class="prettyprint prettyprinted"><span class="pln">localhost</span><span class="pun">:</span><span class="lit">4200</span><span class="pun">/</span><span class="pln">contact</span></code>, we can see our contact page in the browser. If we continue mapping out the structure of our application as it grows, we can see that this second route followed the same pattern as the first:
+<br><br>
+<img src="./Routes and Templates_files/tworoutesember.png" alt="tworoutesember">
+<br><br></p>
+<h2>Navigating with Links and the {{link-to}} Helper</h2>
+<p>Of course, we don't want users to have to manually enter URLs to navigate our site. Let's add navigational links at the bottom of each page. We'll make a "contact" link on the about page and an "about" link on the contact page.</p>
+<p>Ember has built-in <strong>helpers</strong> that provide basic functionality, such as linking between routes. Here is how to use the <code class="prettyprint prettyprinted"><span class="pun">{{</span><span class="pln">link</span><span class="pun">-</span><span class="pln">to</span><span class="pun">}}</span></code> helper in our code:</p>
+<div class="filename">app/templates/about.hbs</div>
+<pre><code class="prettyprint lang-handlebars prettyprinted"><span class="tag">&lt;h2&gt;</span><span class="pln">About Super Rentals</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">The Super Rentals website was created to explore the wonderful world of Ember.js. This project allows us to imagine traveling the world while simultaneously traversing the pathways of the Ember framework!</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}</span></code></pre>
+<p>The helper takes one simple argument: The name of the route this link should take the user to; in this case, <code class="prettyprint prettyprinted"><span class="pln">contact</span></code>. We can refresh the page and see our new link. </p>
+<p><img src="./Routes and Templates_files/ember-super-rentals-about.png" alt="super rentals about page screenshot"></p>
+<p>Now, let's add a link to our 'about' page on our 'contact' page: </p>
+<div class="filename">app/templates/contact.hbs</div>
+<pre><code class="prettyprint lang-handlebars prettyprinted"><span class="tag">&lt;p&gt;</span><span class="pln">Super Rentals Representatives would love to help you choose a destination or answer any burning questions you may have.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">Contact us today!</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">
+  Super Rentals Headquarters</span><span class="tag">&lt;br&gt;</span><span class="pln">
+  1212 Test Address Avenue</span><span class="tag">&lt;br&gt;</span><span class="pln">
+  TestyMcTestington, OR 97233
+</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">(503) 555-1212</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">superrentalsrep@superrentals.com</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+{{#link-to 'about'}}About{{/link-to}}</span></code></pre>
+<h2>An Index Route</h2>
+<p>Let's also include a homepage to welcome users. Just like our previous pages, we will first generate a new route. Let's call this one "index":</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ ember g route index
+version</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2.4</span><span class="pun">.</span><span class="lit">2</span><span class="pln">
+installing route
+  create app</span><span class="pun">/</span><span class="pln">routes</span><span class="pun">/</span><span class="pln">index</span><span class="pun">.</span><span class="pln">js
+  create app</span><span class="pun">/</span><span class="pln">templates</span><span class="pun">/</span><span class="pln">index</span><span class="pun">.</span><span class="pln">hbs
+installing route</span><span class="pun">-</span><span class="pln">test
+  create tests</span><span class="pun">/</span><span class="pln">unit</span><span class="pun">/</span><span class="pln">routes</span><span class="pun">/</span><span class="pln">index</span><span class="pun">-</span><span class="pln">test</span><span class="pun">.</span><span class="pln">js</span></code></pre>
+<p>Unlike the other two routes we've created, the <code class="prettyprint prettyprinted"><span class="pln">index</span></code> route is special: It does <em>NOT</em> require an entry in the Router. You'll notice that generating this route did <em>not</em> alter <code class="prettyprint prettyprinted"><span class="pln">app</span><span class="pun">/</span><span class="pln">router</span><span class="pun">.</span><span class="pln">js</span></code> at all. We'll learn more about why this entry isn't required later on. For now, just know the index route is not listed in the router. We can find it at the default path <code class="prettyprint prettyprinted"><span class="pln">localhost</span><span class="pun">:</span><span class="lit">4200</span></code>.</p>
+<p>We'll update our new <code class="prettyprint prettyprinted"><span class="pln">index</span><span class="pun">.</span><span class="pln">hbs</span></code> template with links to our other two routes:</p>
+<div class="filename">app/templates/index.hbs</div>
+<pre><code class="prettyprint lang-handlebars prettyprinted"><span class="tag">&lt;h1&gt;</span><span class="pln"> Welcome to Super Rentals </span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+We hope you find exactly what you're looking for in a place to stay.
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}</span></code></pre>
+<p>Now, we have three unique routes: the default index route, the <code class="prettyprint prettyprinted"><span class="pln">about</span></code> route, and the <code class="prettyprint prettyprinted"><span class="pln">contact</span></code> route.</p>
+<p></p><hr><p></p>
+<p><strong><a href="https://github.com/epicodus-lessons/ember-super-rentals/tree/1.0_routes_and_templates"><i class="glyphicon glyphicon-folder-open"></i> Example GitHub Repo for Super-Rentals</a></strong></p>
+</div>
+<div class="tab-pane" id="cheat-sheet">
+<p>Making a Route:</p>
+<pre><code class="prettyprint prettyprinted"><span class="pln">$ember g route </span><span class="pun">[</span><span class="pln">name</span><span class="pun">-</span><span class="pln">of</span><span class="pun">-</span><span class="pln">route</span><span class="pun">]</span></code></pre>
+<p>Generator creates three new files: </p>
+<ol>
+<li>route handler ( app/routes/name-of-route.js ) </li>
+<li>one for the template the route handler will render ( app/templates/name-of-route.hbs ) </li>
+<li>a test file ( tests/unit/routes/name-of-route-test.js )
+4… the router file is also touched ( app/router.js ) </li>
+</ol>
+<p>Index route is special: doesn’t require an entry in the router’s mapping:</p>
+<pre><code class="prettyprint prettyprinted"><span class="pln">$ember g route index </span></code></pre>
+<p>{{link-to}} helper:</p>
+<p>To create a link:
+<code class="prettyprint prettyprinted"><span class="pun">{{#</span><span class="pln">link</span><span class="pun">-</span><span class="pln">to </span><span class="pun">‘</span><span class="pln">index</span><span class="pun">’}}</span><span class="typ">Home</span><span class="pun">{{/</span><span class="pln">link</span><span class="pun">-</span><span class="pln">to</span><span class="pun">}}</span></code></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.learnhowtoprogram.com/courses">Courses</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li> </li><li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/application-setup-and-structure">Previous</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/models">Next</a></li>
+
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li id="navbar-search">
+<form class="navbar-form navbar-left" action="https://www.learnhowtoprogram.com/lessons" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="input-group">
+<input type="text" name="search" id="search" placeholder="Search lessons" class="form-control">
+<div class="input-group-btn">
+<input type="submit" name="commit" value="Search" class="btn btn-info">
+</div>
+</div>
+</form> </li>
+</ul>
+</div>
+</div>
+</nav>
+<footer class="footer">
+<div class="container">
+<p>© 2016 <a href="http://www.epicodus.com/">Epicodus</a>, Inc.</p>
+</div>
+</footer>
+ 
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+    window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/a5a2c64ff5b8.js");
+    /*]]>{/literal}*/</script>
+ 
+
+
+<div class="usabilla_live_button_container" tabindex="0" aria-hidden="true" style="right:0px;top:50%;margin-top:-65px;position:fixed;width:39px;height:130px;z-index:999"><iframe src="./Routes and Templates_files/saved_resource(1).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Visual Feedback Button" style="width: 39px; height: 130px; margin: 0px; padding: 0px; border: 0px; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;"></iframe></div></body></html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://www.learnhowtoprogram.com/javascript/ember-js/components-save-delete -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Components - Save/Delete</title>
+
+<script type="text/javascript" src="./Components - Save_Delete_files/48356a79ca"></script><script src="./Components - Save_Delete_files/nr-963.min.js"></script><script type="text/javascript" async="" src="./Components - Save_Delete_files/ga.js"></script><script async="" src="./Components - Save_Delete_files/cloudflare.min.js"></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"6eaee1a1762d23df434cf746d5ab170c",petok:"92c0899258f17d15226179c9a8ffe850efd6e1bc-1471040509-1800",zone:"learnhowtoprogram.com",rocket:"0",apps:{"ga_key":{"ua":"UA-37469895-2","ga_bs":"1"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"48356a79ca","applicationID":"1386295","transactionName":"IAwPEhQNWVxUFx5VUBAQDggVTUZYXhI=","queueTime":12,"applicationTime":108,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ikvidR8/OB4/Ummj5kMtroAlTxWvVBonxt4UbW0hxiQdcIVAfeJKCQCXmP+XkNSxGBhQAzsqVXdntyGozB2yHw==">
+<link rel="stylesheet" media="all" href="./Components - Save_Delete_files/application-11aae51317641930eeb93a7f6ccc38b6bc6ecf53c449c0273d59effa73f919a3.css">
+<link href="./Components - Save_Delete_files/css" rel="stylesheet" type="text/css">
+<script src="./Components - Save_Delete_files/application-290b9e2f856c15ef7f99c69b163d3e246213cdbe7b19fff57b40e2094d15979c.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37469895-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+/* ]]> */
+</script>
+<style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head>
+<body><div id="lightningjs-usabilla_live" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-usabilla_live" src="./Components - Save_Delete_files/saved_resource.html"></iframe></div></div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<span class="label label-info">Lesson</span>
+<span class="label label-primary">Weekend</span>
+<ul class="breadcrumb">
+<li><a href="https://www.learnhowtoprogram.com/javascript">JavaScript</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js">Ember JS</a></li>
+<li class="active">Components - Save/Delete</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active"><a href="https://www.learnhowtoprogram.com/javascript/ember-js/components-save-delete#text" data-toggle="tab">Text</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active in" id="text">
+<p>Let's continue working with components. In this lesson we’ll add the functionality to create a brand new rental, and to delete rentals that are no longer available to rent.</p>
+<h2>Destroy a record</h2>
+<p>We'll start by simply adding a delete button beside each rental. This button will bind an action called ‘delete’ to a html button. It will also include the particular rental we want to delete as an argument: </p>
+<div class="filename">app/templates/components/rental-tile.hbs</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="tag">&lt;li&gt;</span><span class="pln">{{rental.owner}}'s {{rental.type}} in {{rental.city}}
+  {{#if isImageShowing}}
+    </span><span class="tag">&lt;p&gt;&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">{{rental.image}}</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">{{rental.type}}</span><span class="pln"> {{</span><span class="atn">action</span><span class="pln"> </span><span class="atv">'imageHide'</span><span class="pln">}}</span><span class="tag">&gt;&lt;/p&gt;</span><span class="pln">
+  {{else}}
+    </span><span class="tag">&lt;button</span><span class="pln"> {{</span><span class="atn">action</span><span class="pln"> </span><span class="atv">'imageShow'</span><span class="pln">}}</span><span class="tag">&gt;</span><span class="pln">Image</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+  {{/if}}
+  </span><span class="tag">&lt;button</span><span class="pln"> {{</span><span class="atn">action</span><span class="pln"> </span><span class="atv">'delete'</span><span class="pln"> </span><span class="atn">rental</span><span class="pln">}}</span><span class="tag">&gt;</span><span class="pln">Delete</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+</span><span class="tag">&lt;/li&gt;</span></code></pre>
+<p>We'll also add the<code class="prettyprint prettyprinted"><span class="kwd">delete</span></code> action to the JavaScript file of this same component. Similar to the <code class="prettyprint prettyprinted"><span class="pln">imageShow</span></code> action we created earlier, this action will run automatically when a user clicks ‘Delete’. (Also, don't forget to add a comma after the closing <code class="prettyprint prettyprinted"><span class="pun">}</span></code> of the previous action!):</p>
+<div class="filename">app/components/rental-tile.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Component</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  isImageShowing</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    imageShow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'isImageShowing'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    imageHide</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+     </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'isImageShowing'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">},</span><span class="pln">
+    </span><span class="kwd">delete</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">confirm</span><span class="pun">(</span><span class="str">'Are you sure you want to delete this rental?'</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'destroyRental'</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">);</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span></code></pre>
+<p>When triggered, the <code class="prettyprint prettyprinted"><span class="kwd">delete</span></code> action will display a confirmation pop-up. If confirmed, it will send the action <code class="prettyprint prettyprinted"><span class="pln">destroyRental</span><span class="pun">()</span></code> upwards. Remember, <strong>only route handlers may create, delete or update objects in our data store</strong>. This component cannot delete the object itself. Instead, it sends notification of our intent to delete this rental upwards through the template and into the route handler by calling <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">()</span></code>. In the <code class="prettyprint prettyprinted"><span class="pln">sendAction</span></code> function's argument, we provide the name of the function on the template and route handler we’d like to activate (in this case, <code class="prettyprint prettyprinted"><span class="pln">destroyRental</span><span class="pun">()</span></code>, which we will create momentarily), and the specific rental to provide that action.</p>
+<p>Ember follows the paradigm “<em>Data down, actions up</em>”. Data must be passed downwards from the route, to the template, and into a component (as we did in previous lessons). Actions must be passed through each ‘level’ of the application in a similar fashion, but in the <em>opposite</em> direction: Actions move <em>upwards</em> from the component, to the template, into the route handler. </p>
+<p>If we review <a href="https://dl.dropboxusercontent.com/s/1l8qk61dajbwut1/basic-ember-architecture.png">our diagram of an Ember application</a>, we can see that the template exists ‘between’ the component and the route handler that will <em>actually</em> remove this rental from our data store. When our component’s <code class="prettyprint prettyprinted"><span class="kwd">delete</span><span class="pun">()</span></code> action is activated, the line <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'destroyRental'</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">);</span></code> sends this action one level “up” to our template.</p>
+<p>As such, our template will need to match the action it receives from the component to the appropriate action on the route handler. We do this in the same line that calls our component:</p>
+<div class="filename">app/templates/index.hbs</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="pun">...</span><span class="pln">
+</span><span class="str">&lt;ul&gt;</span><span class="pln">
+  </span><span class="pun">{{#</span><span class="pln">each model </span><span class="kwd">as</span><span class="pln"> </span><span class="pun">|</span><span class="pln">rental</span><span class="pun">|}}</span><span class="pln">
+    </span><span class="pun">{{</span><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile rental</span><span class="pun">=</span><span class="pln">rental destroyRental</span><span class="pun">=</span><span class="str">"destroyRental"</span><span class="pun">}}</span><span class="pln">
+  </span><span class="pun">{{/</span><span class="pln">each</span><span class="pun">}}</span><span class="pln">
+</span><span class="pun">&lt;/</span><span class="pln">ul</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">...</span></code></pre>
+<p>When we say <code class="prettyprint prettyprinted"><span class="pln">destroyRental</span><span class="pun">=”</span><span class="pln">destroyRental</span><span class="pun">”</span></code>, we are mapping the <code class="prettyprint prettyprinted"><span class="pln">destroyRental</span><span class="pun">()</span></code> action coming up from the component (on the left of <code class="prettyprint prettyprinted"><span class="pun">=</span></code> ) to the <code class="prettyprint prettyprinted"><span class="pln">destroyRental</span><span class="pun">()</span></code> action on the route handler. </p>
+<p>Now, we just need to create this action on our route handler: </p>
+<div class="filename">app/routes/index.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Route</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  model</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">store</span><span class="pun">.</span><span class="pln">findAll</span><span class="pun">(</span><span class="str">'rental'</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    destroyRental</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      rental</span><span class="pun">.</span><span class="pln">destroyRecord</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(</span><span class="str">'index'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>Now, when we hit a rental's delete button, our action will move upwards from the component, through the template, and into the route handler. The route handler will access our data store and delete the object for us. Finally, we call <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(‘</span><span class="pln">index</span><span class="pun">’)</span></code> to return to the index page after a rental is deleted.</p>
+<p>To review, the movement of actions from our component, through our template, and into the route handler looks like this: </p>
+<p><img src="./Components - Save_Delete_files/Copy of emberstructurenowwithmodels.png" alt="Ember component delete action image"></p>
+<h2>Save a new record</h2>
+<p>Now, we know how to delete rentals. Let's allow users to add new ones by clicking a "New Rentals" button underneath the list of rentals on our home page. </p>
+<div class="filename">app/templates/index.hbs</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="tag">&lt;h1&gt;</span><span class="pln"> Welcome to Super Rentals </span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+We hope you find exactly what you're looking for in a place to stay.
+
+</span><span class="tag">&lt;ul&gt;</span><span class="pln">
+  {{#each model as |rental|}}
+    {{rental-tile rental=rental destroyRental="destroyRental"}}
+  {{/each}}
+</span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+
+{{new-rental save2="save3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}</span></code></pre>
+<p>To demonstrate the different steps in the process, we'll use action names with numbers (<code class="prettyprint prettyprinted"><span class="pln">save1</span></code>, <code class="prettyprint prettyprinted"><span class="pln">save2</span></code>, and <code class="prettyprint prettyprinted"><span class="pln">save3</span></code>) to emphasize the individual steps that must occur when passing an action up from a component, through a template and into a route. This is only for example, and is not a special or required naming convention. When we code our next function - updating - we'll use the same name for all of the actions processing the function. </p>
+<p>Here we'll send the <code class="prettyprint prettyprinted"><span class="kwd">new</span><span class="pun">-</span><span class="pln">rental</span></code> component the variable "save2" set to the name of the saving action on the route, "save3".</p>
+<p>Let's generate the component that will:</p>
+<ul>
+<li>toggle a "New Rental" button and a new rental form</li>
+<li>handle new rental form submissions</li>
+</ul>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ember g component </span><span class="kwd">new</span><span class="pun">-</span><span class="pln">rental</span></code></pre>
+<p>In the display, we will set a property, <code class="prettyprint prettyprinted"><span class="pln">addNewRental</span></code> to <code class="prettyprint prettyprinted"><span class="kwd">true</span></code> or <code class="prettyprint prettyprinted"><span class="kwd">false</span></code>. When <code class="prettyprint prettyprinted"><span class="kwd">true</span></code>, the form will show. When <code class="prettyprint prettyprinted"><span class="kwd">false</span></code>, the button will show. Let's handle each of these possibilities one at a time, starting with our button.</p>
+<div class="filename">app/templates/components/new-rental.hbs</div>
+<pre><code class="prettyprint prettyprinted"><span class="pun">{{#</span><span class="kwd">if</span><span class="pln"> addNewRental</span><span class="pun">}}</span><span class="pln">
+     </span><span class="str">&lt;p&gt;</span><span class="typ">Display</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> rental form </span><span class="pun">-</span><span class="pln"> to be replaced </span><span class="kwd">with</span><span class="pln"> form code soon</span><span class="pun">.&lt;/</span><span class="pln">p</span><span class="pun">&gt;</span><span class="pln">
+ </span><span class="pun">{{</span><span class="kwd">else</span><span class="pun">}}</span><span class="pln">
+    </span><span class="pun">&lt;</span><span class="pln">button </span><span class="pun">{{</span><span class="pln">action </span><span class="str">'rentalFormShow'</span><span class="pun">}}&gt;</span><span class="typ">New</span><span class="pln"> </span><span class="typ">Rental</span><span class="pun">&lt;</span><span class="str">/button&gt;
+{{/</span><span class="kwd">if</span><span class="pun">}}</span></code></pre>
+<p>Let's add the behavior for the button:</p>
+<div class="filename">app/components/new-rental.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Component</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  addNewRental</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    rentalFormShow</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'addNewRental'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>Like hiding and showing the images, we will toggle what is displayed using the <code class="prettyprint prettyprinted"><span class="pln">addNewRental</span></code> property. When the button is clicked, the action <code class="prettyprint prettyprinted"><span class="pln">rentalFormShow</span></code> sets the property value to true to show the form.</p>
+<p>Now let's add the form:</p>
+<div class="filename">app/templates/components/new-rental.hbs</div>
+<pre><code class="prettyprint prettyprinted"><span class="pun">{{#</span><span class="kwd">if</span><span class="pln"> addNewRental</span><span class="pun">}}</span><span class="pln">
+  </span><span class="str">&lt;h1&gt;</span><span class="typ">New</span><span class="pln"> </span><span class="typ">Rental</span><span class="pun">&lt;</span><span class="str">/h1&gt;
+    &lt;div&gt;
+      &lt;form&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="owner"&gt;Owner&lt;/</span><span class="pln">label</span><span class="pun">&gt;</span><span class="pln">
+          </span><span class="pun">{{</span><span class="pln">input value</span><span class="pun">=</span><span class="pln">owner id</span><span class="pun">=</span><span class="str">"owner"</span><span class="pun">}}</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="str">/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="type"&gt;Type&lt;/</span><span class="pln">label</span><span class="pun">&gt;</span><span class="pln">
+          </span><span class="pun">{{</span><span class="pln">input value</span><span class="pun">=</span><span class="pln">type id</span><span class="pun">=</span><span class="str">"type"</span><span class="pun">}}</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="str">/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="city"&gt;City&lt;/</span><span class="pln">label</span><span class="pun">&gt;</span><span class="pln">
+          </span><span class="pun">{{</span><span class="pln">input value</span><span class="pun">=</span><span class="pln">city id</span><span class="pun">=</span><span class="str">"city"</span><span class="pun">}}</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="str">/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="bedrooms"&gt;Number of Bedrooms&lt;/</span><span class="pln">label</span><span class="pun">&gt;</span><span class="pln">
+          </span><span class="pun">{{</span><span class="pln">input value</span><span class="pun">=</span><span class="pln">bedrooms id</span><span class="pun">=</span><span class="str">"bedrooms"</span><span class="pun">}}</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="str">/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="image"&gt;Image URL&lt;/</span><span class="pln">label</span><span class="pun">&gt;</span><span class="pln">
+          </span><span class="pun">{{</span><span class="pln">input value</span><span class="pun">=</span><span class="pln">image id</span><span class="pun">=</span><span class="str">"image"</span><span class="pun">}}</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="str">/div&gt;
+
+        &lt;button {{action 'save1'}}&gt;Save&lt;/</span><span class="pln">button</span><span class="pun">&gt;</span><span class="pln">
+      </span><span class="pun">&lt;</span><span class="str">/form&gt;
+    &lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">{{</span><span class="kwd">else</span><span class="pun">}}</span><span class="pln">
+    </span><span class="pun">&lt;</span><span class="pln">button </span><span class="pun">{{</span><span class="pln">action </span><span class="str">'rentalFormShow'</span><span class="pun">}}&gt;</span><span class="typ">New</span><span class="pln"> </span><span class="typ">Rental</span><span class="pun">&lt;</span><span class="str">/button&gt;
+{{/</span><span class="kwd">if</span><span class="pun">}}</span></code></pre>
+<p>Ember provides the <a href="https://guides.emberjs.com/v2.3.0/templates/input-helpers/"><code class="prettyprint prettyprinted"><span class="pun">{{</span><span class="pln">input</span><span class="pun">}}</span></code> helper</a> for form inputs that allows us to pass in a number of attributes. In this example, we are using only the <code class="prettyprint prettyprinted"><span class="pln">value</span></code> and <code class="prettyprint prettyprinted"><span class="pln">id</span></code> attributes.</p>
+<p>Our submit button has the <code class="prettyprint prettyprinted"><span class="pln">save1</span></code> action attached to begin the process of saving the new rental added by a user. </p>
+<p>Now, we'll add the component behavior of the <code class="prettyprint prettyprinted"><span class="typ">Save</span></code> button:</p>
+<div class="filename">app/components/new-rental.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Component</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  addNewRental</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    rentalFormShow</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'addNewRental'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    save1</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">var</span><span class="pln"> </span><span class="kwd">params</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        owner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'owner'</span><span class="pun">),</span><span class="pln">
+        city</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'city'</span><span class="pun">),</span><span class="pln">
+        type</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'type'</span><span class="pun">),</span><span class="pln">
+        image</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'image'</span><span class="pun">),</span><span class="pln">
+        bedrooms</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'bedrooms'</span><span class="pun">),</span><span class="pln">
+      </span><span class="pun">};</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'addNewRental'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'save2'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>The <code class="prettyprint prettyprinted"><span class="pln">save1</span></code> action collects all of the data that was entered in the input fields and sets them as values in a hash of keys with the same names. So, <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'owner'</span><span class="pun">)</span></code> collects the value entered in the owner input field and assigns it to the variable key <code class="prettyprint prettyprinted"><span class="pln">owner</span></code>. After each field's value is collected, the form is hidden again by setting the <code class="prettyprint prettyprinted"><span class="pln">addNewRental</span></code> property to false.</p>
+<p><em>Note: When a field is not populated, its value will be <code class="prettyprint prettyprinted"><span class="kwd">undefined</span></code>. <code class="prettyprint prettyprinted"><span class="typ">Undefined</span></code> is not a valid JSON type. Undefined values will prevent the record from being written to Firebase and cause an error. For fields that may be undefined, add a conditional that sets them to "" or null. Example: <code class="prettyprint prettyprinted"><span class="pln">owner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'owner'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'owner'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span></code></em></p>
+<p>Finally, the component emits the action <code class="prettyprint prettyprinted"><span class="pln">save2</span></code> sending with it the params hash that we just made. Remember that the component received <code class="prettyprint prettyprinted"><span class="pln">save </span><span class="lit">2</span></code> from the index template (and this was set to <code class="prettyprint prettyprinted"><span class="str">"save3"</span></code> which we will name the route handler's action for saving.)</p>
+<p>The last step is to have the route handler add the new rental to the Ember Data store:</p>
+<div class="filename">app/routes/index.js</div>
+<pre><code class="prettyprint lang-javascript prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Route</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  model</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">store</span><span class="pun">.</span><span class="pln">findAll</span><span class="pun">(</span><span class="str">'rental'</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    save3</span><span class="pun">(</span><span class="kwd">params</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">var</span><span class="pln"> newRental </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">store</span><span class="pun">.</span><span class="pln">createRecord</span><span class="pun">(</span><span class="str">'rental'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span><span class="pln">
+      newRental</span><span class="pun">.</span><span class="pln">save</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(</span><span class="str">'index'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    destroyRental</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      rental</span><span class="pun">.</span><span class="pln">destroyRecord</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(</span><span class="str">'index'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>We use the <code class="prettyprint prettyprinted"><span class="kwd">params</span></code> to create a new <code class="prettyprint prettyprinted"><span class="pln">rental</span></code> record in the store and then save it. We transition back to our index page and see our new rental in the list.</p>
+<p></p><hr><p></p>
+<p><strong><a href="https://github.com/epicodus-lessons/ember-super-rentals/tree/1.4_components_save_delete"><i class="glyphicon glyphicon-folder-open"></i> Example GitHub Repo for Super-Rentals</a></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.learnhowtoprogram.com/courses">Courses</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li> </li><li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/components-hide-show-image">Previous</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/ember-debugging">Next</a></li>
+
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li id="navbar-search">
+<form class="navbar-form navbar-left" action="https://www.learnhowtoprogram.com/lessons" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="input-group">
+<input type="text" name="search" id="search" placeholder="Search lessons" class="form-control">
+<div class="input-group-btn">
+<input type="submit" name="commit" value="Search" class="btn btn-info">
+</div>
+</div>
+</form> </li>
+</ul>
+</div>
+</div>
+</nav>
+<footer class="footer">
+<div class="container">
+<p>© 2016 <a href="http://www.epicodus.com/">Epicodus</a>, Inc.</p>
+</div>
+</footer>
+ 
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+    window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/a5a2c64ff5b8.js");
+    /*]]>{/literal}*/</script>
+ 
+
+
+<div class="usabilla_live_button_container" tabindex="0" aria-hidden="true" style="right:0px;top:50%;margin-top:-65px;position:fixed;width:39px;height:130px;z-index:999"><iframe src="./Components - Save_Delete_files/saved_resource(1).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Visual Feedback Button" style="width: 39px; height: 130px; margin: 0px; padding: 0px; border: 0px; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;"></iframe></div></body></html>

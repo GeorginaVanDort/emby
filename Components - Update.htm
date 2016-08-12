@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.learnhowtoprogram.com/javascript/ember-js/components-update -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Components - Update</title>
+
+<script type="text/javascript" src="./Components - Update_files/48356a79ca"></script><script src="./Components - Update_files/nr-963.min.js"></script><script type="text/javascript" async="" src="./Components - Update_files/ga.js"></script><script async="" src="./Components - Update_files/cloudflare.min.js"></script><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"6eaee1a1762d23df434cf746d5ab170c",petok:"8ef41f94f43a715bb289b7816b83f97d3083ee26-1471040531-1800",zone:"learnhowtoprogram.com",rocket:"0",apps:{"ga_key":{"ua":"UA-37469895-2","ga_bs":"1"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=0489c402f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"48356a79ca","applicationID":"1386295","transactionName":"IAwPEhQNWVxUFx5VUBAQDggVTUZYXhI=","queueTime":0,"applicationTime":58,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="GHb5//mOwsgYoOsketgAViE82MGW1TqCMzxmK0zYqmqPTZ7Km1Ow3ydlGngLC/lJuQHH1wKrddKSVVPu7eTeUQ==">
+<link rel="stylesheet" media="all" href="./Components - Update_files/application-11aae51317641930eeb93a7f6ccc38b6bc6ecf53c449c0273d59effa73f919a3.css">
+<link href="./Components - Update_files/css" rel="stylesheet" type="text/css">
+<script src="./Components - Update_files/application-290b9e2f856c15ef7f99c69b163d3e246213cdbe7b19fff57b40e2094d15979c.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37469895-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+/* ]]> */
+</script>
+<style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head>
+<body><div id="lightningjs-usabilla_live" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-usabilla_live" src="./Components - Update_files/saved_resource.html"></iframe></div></div>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<span class="label label-info">Lesson</span>
+<span class="label label-primary">Monday</span>
+<ul class="breadcrumb">
+<li><a href="https://www.learnhowtoprogram.com/javascript">JavaScript</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js">Ember JS</a></li>
+<li class="active">Components - Update</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active"><a href="https://www.learnhowtoprogram.com/javascript/ember-js/components-update#text" data-toggle="tab">Text</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active in" id="text">
+<p>In this lesson we'll implement the ability to update a rental's details. To do this we'll create a new <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">-</span><span class="pln">rental</span></code> component to be called within our <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span></code> component. Remember, Ember relies on the pattern <em>"Data down, actions up"</em> . This means data must be passed <em>downwards</em> from the route, through the template, and into a component. Conversely, actions must be passed <em>upwards</em> from the component, to the template, and into the route handler.</p>
+<p>In this lesson, we will begin at the "bottom" of the application, in a component, and work our way upwards into the route. Our update function will begin when the user clicks an "Update" button. This will display an update form that allows the user to input new rental attributes, like so:</p>
+<p><img src="./Components - Update_files/super-rentals-update-webshot.png" alt="Update button webshot"></p>
+<p>We'll begin by generating a new component:</p>
+<pre><code class="prettyprint lang-shell prettyprinted"><span class="pln">$ ember g component update</span><span class="pun">-</span><span class="pln">rental</span></code></pre>
+<p>We’ll render this new component within the <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span><span class="pun">.</span><span class="pln">hbs</span></code> component template, right before the <code class="prettyprint prettyprinted"><span class="typ">Delete</span></code> button. We'll also include <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">=</span><span class="pln">rental</span></code> and <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">=</span><span class="str">"update"</span></code>in this line, in order to pass the rental object, and the update action we're about to create between the two components: </p>
+<div class="filename">app/templates/components/rental-tile.hbs</div>
+<pre><code class="prettyprint prettyprinted"><span class="tag">&lt;li&gt;</span><span class="pln">{{rental.owner}}'s {{rental.type}} in {{rental.city}}
+  {{#if isImageShowing}}
+    </span><span class="tag">&lt;p&gt;&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">{{rental.image}}</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">{{rental.type}}</span><span class="pln"> {{</span><span class="atn">action</span><span class="pln"> </span><span class="atv">'imageHide'</span><span class="pln">}}</span><span class="tag">&gt;&lt;/p&gt;</span><span class="pln">
+  {{else}}
+    </span><span class="tag">&lt;button</span><span class="pln"> {{</span><span class="atn">action</span><span class="pln"> </span><span class="atv">'imageShow'</span><span class="pln">}}</span><span class="tag">&gt;</span><span class="pln">Image</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+  {{/if}}
+  {{update-rental rental=rental update="update"}}
+  </span><span class="tag">&lt;button</span><span class="pln"> {{</span><span class="atn">action</span><span class="pln"> </span><span class="atv">'delete'</span><span class="pln"> </span><span class="atn">rental</span><span class="pln">}}</span><span class="tag">&gt;</span><span class="pln">Delete</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+</span><span class="tag">&lt;/li&gt;</span></code></pre>
+<p>Let's also add the following code in the <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">-</span><span class="pln">rental</span></code> component’s template:</p>
+<div class="filename">app/templates/components/update-rental.hbs</div>
+<pre><code class="prettyprint prettyprinted"><span class="pun">{{#</span><span class="kwd">if</span><span class="pln"> updateRentalForm</span><span class="pun">}}</span><span class="pln">
+  </span><span class="str">&lt;h4&gt;</span><span class="typ">Update</span><span class="pln"> </span><span class="pun">{{</span><span class="pln">rental</span><span class="pun">.</span><span class="pln">owner</span><span class="pun">}}</span><span class="str">'s {{rental.type}}&lt;/h4&gt;
+    &lt;div&gt;
+      &lt;form&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="owner"&gt;Owner&lt;/label&gt;
+          {{input value=owner id="owner" placeholder=rental.owner}}
+        &lt;/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="type"&gt;Type&lt;/label&gt;
+          {{input value=type id="type" placeholder=rental.type}}
+        &lt;/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="city"&gt;City&lt;/label&gt;
+          {{input value=city id="city" placeholder=rental.city}}
+        &lt;/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="bedrooms"&gt;Number of Bedrooms&lt;/label&gt;
+          {{input value=bedrooms id="bedrooms" placeholder=rental.bedrooms}}
+        &lt;/div&gt;
+
+        &lt;div class="form-group"&gt;
+          &lt;label for="image"&gt;Image URL&lt;/label&gt;
+          {{input value=image id="image" placeholder=rental.image}}
+        &lt;/div&gt;
+
+        &lt;button {{action '</span><span class="pln">update</span><span class="str">' rental}}&gt;Save&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+{{else}}
+    &lt;button {{action '</span><span class="pln">updateRentalForm</span><span class="str">'}}&gt;Update&lt;/button&gt;
+{{/if}}</span></code></pre>
+<p>In addition to an update form, we've added a property called <code class="prettyprint prettyprinted"><span class="pln">updateRentalForm</span></code> to toggle the form's display. When this property is <code class="prettyprint prettyprinted"><span class="kwd">false</span></code> we will see an "Update" button. Clicking the button will set the property to true, which will display the form. </p>
+<p>Additionally, we’ve bound the action <code class="prettyprint prettyprinted"><span class="pln">update</span></code> to the “Save” button. When the user fills out the form and hits “Save” the update action in the JavaScript portion of this component will be triggered. Let's write that action now: </p>
+<div class="filename">app/components/update-rental.js</div>
+<pre><code class="prettyprint prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Component</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  updateRentalForm</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    updateRentalForm</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'updateRentalForm'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    update</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">var</span><span class="pln"> </span><span class="kwd">params</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        owner</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'owner'</span><span class="pun">),</span><span class="pln">
+        city</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'city'</span><span class="pun">),</span><span class="pln">
+        type</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'type'</span><span class="pun">),</span><span class="pln">
+        image</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'image'</span><span class="pun">),</span><span class="pln">
+        bedrooms</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'bedrooms'</span><span class="pun">),</span><span class="pln">
+      </span><span class="pun">};</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'updateRentalForm'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'update'</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p>The <code class="prettyprint prettyprinted"><span class="pln">update</span></code> action receives the rental as an argument. Then, we retrieve information from the form, and package it in a <code class="prettyprint prettyprinted"><span class="kwd">params</span></code> hash. <strong>It's important that the variable names we assign these values match the rental model’s attribute names</strong> (ie: <code class="prettyprint prettyprinted"><span class="pln">owner</span></code>, <code class="prettyprint prettyprinted"><span class="pln">city</span></code>, <code class="prettyprint prettyprinted"><span class="pln">type</span></code>, <code class="prettyprint prettyprinted"><span class="pln">image</span></code>, and <code class="prettyprint prettyprinted"><span class="pln">bedrooms</span></code>; the same attributes we defined on our model in <code class="prettyprint prettyprinted"><span class="pln">models</span><span class="pun">/</span><span class="pln">rental</span><span class="pun">.</span><span class="pln">js</span></code>). If they do not, we will receive errors when assigning these new values to our rental object.</p>
+<p>Once the params are gathered, we hide the form by setting <code class="prettyprint prettyprinted"><span class="pln">updateRentalForm</span></code> back to <code class="prettyprint prettyprinted"><span class="kwd">false</span></code>, and call <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'update'</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span></code> to send the <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action up one level, along with the rental object we will alter, and the params we've just gathered. </p>
+<p>Because <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">-</span><span class="pln">rental</span></code> is nested within another component, <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span></code>, <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(‘</span><span class="pln">update</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span></code> <strong>only sends the <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action up one level</strong>. It is sent from the <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">-</span><span class="pln">rental</span></code> component to its parent component, <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span></code>. As such, the <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span></code> component will <em>also</em> have to pass the action upward in order for this action to eventually reach the appropriate route. <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span></code> will need its own <code class="prettyprint prettyprinted"><span class="pln">update</span></code> action to do this: </p>
+<div class="filename">app/components/rental-tile.js</div>
+<pre><code class="prettyprint prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Component</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  isImageShowing</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+  updateRentalForm</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    imageShow</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'isImageShowing'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    imageHide</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="str">'isImageShowing'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    update</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'update'</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="kwd">delete</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">confirm</span><span class="pun">(</span><span class="str">'Are you sure you want to delete this rental?'</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'destroyRental'</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">);</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span></code></pre>
+<p><strong><em>Note: Don’t forget commas between your actions!</em></strong></p>
+<p>To review, the <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action in <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span></code> is triggered when the child component, <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">-</span><span class="pln">rental</span></code> calls <code class="prettyprint prettyprinted"><span class="kwd">this</span><span class="pun">.</span><span class="pln">sendAction</span><span class="pun">(</span><span class="str">'update'</span><span class="pun">,</span><span class="pln"> rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span></code>. This action simply takes the <code class="prettyprint prettyprinted"><span class="pln">rental</span></code> and <code class="prettyprint prettyprinted"><span class="kwd">params</span></code> objects and continues to pass them upwards to the index template.</p>
+<p>Within our index template, we'll include a line to map the <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action passed upwards from <code class="prettyprint prettyprinted"><span class="pln">rental</span><span class="pun">-</span><span class="pln">tile</span></code> to the corresponding <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action defined in our index route: </p>
+<div class="filename">app/templates/index.hbs</div>
+<pre><code class="prettyprint prettyprinted"><span class="tag">&lt;h1&gt;</span><span class="pln"> Welcome to Super Rentals </span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+
+We hope you find exactly what you're looking for in a place to stay.
+
+</span><span class="tag">&lt;ul&gt;</span><span class="pln">
+  {{#each model as |rental|}}
+    {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
+  {{/each}}
+</span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+
+{{new-rental save2="save3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}</span></code></pre>
+<p>Finally, we’ll add the route handler’s <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action. Remember, <strong>the route handler is the only portion of our application that may directly access model data</strong>. The route handler will need to know the specific rental to update and the new properties we'd like to save to this rental. Therefore, we'll write this action to take two arguments: The <code class="prettyprint prettyprinted"><span class="pln">rental</span></code> and <code class="prettyprint prettyprinted"><span class="kwd">params</span></code> objects we've been passing through each level of our application. </p>
+<p>Before writing the entirety of this action, let's take a quick look behind the scenes. We'll place a <code class="prettyprint prettyprinted"><span class="kwd">debugger</span><span class="pun">;</span></code> directly in our new <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action: </p>
+<div class="filename">app/routes/index.js</div>
+<pre><code class="prettyprint prettyprinted"><span class="kwd">import</span><span class="pln"> </span><span class="typ">Ember</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'ember'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">export</span><span class="pln"> </span><span class="kwd">default</span><span class="pln"> </span><span class="typ">Ember</span><span class="pun">.</span><span class="typ">Route</span><span class="pun">.</span><span class="pln">extend</span><span class="pun">({</span><span class="pln">
+  model</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">store</span><span class="pun">.</span><span class="pln">findAll</span><span class="pun">(</span><span class="str">'rental'</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+
+  actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    save3</span><span class="pun">(</span><span class="kwd">params</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">var</span><span class="pln"> newRental </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">store</span><span class="pun">.</span><span class="pln">createRecord</span><span class="pun">(</span><span class="str">'rental'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">);</span><span class="pln">
+      newRental</span><span class="pun">.</span><span class="pln">save</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(</span><span class="str">'index'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    update</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">debugger</span><span class="pun">;</span><span class="pln">
+      rental</span><span class="pun">.</span><span class="pln">save</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(</span><span class="str">'index'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    destroyRental</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      rental</span><span class="pun">.</span><span class="pln">destroyRecord</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(</span><span class="str">'index'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+</span></code></pre>
+<p>Let’s navigate to the update form, enter new values for <code class="prettyprint prettyprinted"><span class="pln">owner</span></code>, <code class="prettyprint prettyprinted"><span class="pln">type</span></code> and <code class="prettyprint prettyprinted"><span class="pln">bedrooms</span></code>, and submit it. </p>
+<p><img src="./Components - Update_files/super-rentals-update-debugger-webshot.png" alt="Debugger Webshot"></p>
+<p>When the application pauses, select the console from the bottom pane of developer tools. We'll type "rental" directly into the console. This will display our current rental object. Using the triangle left of 'Class' will expand its details. Here we can see the <code class="prettyprint prettyprinted"><span class="kwd">get</span></code> and <code class="prettyprint prettyprinted"><span class="kwd">set</span></code> actions for each of the rental's properties. If we look at the <code class="prettyprint prettyprinted"><span class="kwd">params</span></code> hash we can see the key-value pairs for each of our update form's fields. Fields that were updated include the value entered by the user. Fields that were not are listed as <code class="prettyprint prettyprinted"><span class="kwd">undefined</span></code>. Our updated fields should be <code class="prettyprint prettyprinted"><span class="pln">owner</span></code>, <code class="prettyprint prettyprinted"><span class="pln">type</span></code> and <code class="prettyprint prettyprinted"><span class="pln">bedrooms</span></code>, as visible in the image above. </p>
+<p>Again, the keys in<code class="prettyprint prettyprinted"><span class="kwd">params</span></code> should match the names of the attributes on<code class="prettyprint prettyprinted"><span class="pln">rental</span></code> model. We want to update every attribute the user defined to the new value (ie: every value not <code class="prettyprint prettyprinted"><span class="kwd">undefined</span></code>). In this example, we want the <code class="prettyprint prettyprinted"><span class="pln">owner</span></code>, <code class="prettyprint prettyprinted"><span class="pln">type</span></code> and <code class="prettyprint prettyprinted"><span class="pln">bedrooms</span></code> properties to be updated with the new values, but <code class="prettyprint prettyprinted"><span class="pln">city</span></code> and <code class="prettyprint prettyprinted"><span class="pln">image</span></code> should remain the same, since the user has opted not to update those attributes. </p>
+<p>We'll code the rest of our index route’s <code class="prettyprint prettyprinted"><span class="pln">update</span><span class="pun">()</span></code> action to do this now:</p>
+<div class="filename">app/routes/index.js</div>
+<pre><code class="prettyprint prettyprinted"><span class="pun">...</span><span class="pln">
+update</span><span class="pun">(</span><span class="pln">rental</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">params</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="typ">Object</span><span class="pun">.</span><span class="pln">keys</span><span class="pun">(</span><span class="kwd">params</span><span class="pun">).</span><span class="pln">forEach</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">key</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="kwd">params</span><span class="pun">[</span><span class="pln">key</span><span class="pun">]!==</span><span class="kwd">undefined</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+          rental</span><span class="pun">.</span><span class="kwd">set</span><span class="pun">(</span><span class="pln">key</span><span class="pun">,</span><span class="kwd">params</span><span class="pun">[</span><span class="pln">key</span><span class="pun">]);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+      </span><span class="pun">});</span><span class="pln">
+      rental</span><span class="pun">.</span><span class="pln">save</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">transitionTo</span><span class="pun">(</span><span class="str">'index'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+</span><span class="pun">...</span></code></pre>
+<p>Line-by-line in plain English, our code reads as follows: </p>
+<p><em>For each key in the <code class="prettyprint prettyprinted"><span class="kwd">params</span></code>, <br>
+if it is NOT undefined, <br>
+take the rental and set the property that matches the current key, to the value of the current key, <br>
+after looping through all of the keys, save the rental,<br>
+transition to the index route.</em><br></p>
+<p>This assures that properties the user has updated will be changed accordingly, but properties the user has <em>not</em> updated will remain the same (instead of being redefined as <code class="prettyprint prettyprinted"><span class="kwd">undefined</span></code>). After all, they didn’t want to change those. </p>
+<p>And when we arrive on our index, our rental has been updated!</p>
+<p></p><hr><p></p>
+<p><strong><a href="https://github.com/epicodus-lessons/ember-super-rentals/tree/1.5_components_update"><i class="glyphicon glyphicon-folder-open"></i> Example GitHub Repo for Super-Rentals</a></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.learnhowtoprogram.com/courses">Courses</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li> </li><li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/property-rental-app">Previous</a></li>
+<li><a href="https://www.learnhowtoprogram.com/javascript/ember-js/dynamic-routing-find-record">Next</a></li>
+
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li id="navbar-search">
+<form class="navbar-form navbar-left" action="https://www.learnhowtoprogram.com/lessons" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="input-group">
+<input type="text" name="search" id="search" placeholder="Search lessons" class="form-control">
+<div class="input-group-btn">
+<input type="submit" name="commit" value="Search" class="btn btn-info">
+</div>
+</div>
+</form> </li>
+</ul>
+</div>
+</div>
+</nav>
+<footer class="footer">
+<div class="container">
+<p>© 2016 <a href="http://www.epicodus.com/">Epicodus</a>, Inc.</p>
+</div>
+</footer>
+ 
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+    window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/a5a2c64ff5b8.js");
+    /*]]>{/literal}*/</script>
+ 
+
+
+<div class="usabilla_live_button_container" tabindex="0" aria-hidden="true" style="right:0px;top:50%;margin-top:-65px;position:fixed;width:39px;height:130px;z-index:999"><iframe src="./Components - Update_files/saved_resource(1).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Visual Feedback Button" style="width: 39px; height: 130px; margin: 0px; padding: 0px; border: 0px; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;"></iframe></div></body></html>
